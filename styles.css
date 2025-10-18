@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  background-image: url("w00608_option3_1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3b2f2f;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.85);
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  text-align: center;
+  width: 320px;
+  position: relative;
+}
+
+h1 {
+  color: #4a2c2a;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-shadow: 1px 1px 2px #fff2c0;
+}
+
+input {
+  padding: 0.5rem;
+  width: 70%;
+  margin-bottom: 1rem;
+  border: 2px solid #7b523b;
+  border-radius: 10px;
+  background-color: #f8e9d0;
+  outline: none;
+  font-size: 1.8rem;
+}
+
+button {
+  background-color: #7b523b;
+  color: #fff;
+  font-size: 1.8rem;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin-left: 0.3rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #5c3a29;
+}
+
+.weather-info {
+  margin-top: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.weather-info:hover {
+  transform: scale(1.03);
+}
+
+#dinoImage {
+  width: 200px;
+  animation: bounce 1s infinite;
+}
+
+/* Little Dino bounce animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+#temperature {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#description {
+  font-style: italic;
+  font-size: 1.5rem;
+  color: #5c3a29;
+}
